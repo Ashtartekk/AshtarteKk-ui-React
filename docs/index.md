@@ -1,7 +1,7 @@
 ---
-title: AshtarteKk UI
+title: Alone UI
 hero:
-  title: AshtarteKk UI
+  title: Alone UI
   desc: 文档站点基于 dumi 生成
   actions:
     - text: 快速上手

@@ -6,11 +6,14 @@
   "license": "ISC",
   "author": "",
   "main": "index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "build:site": "rimraf doc-site && dumi build",
+    "build:types": "tsc -p tsconfig.build.json && cpr lib esm",
     "commit": "git-cz",
+    "deploy:site": "npm run build:site && gh-pages -d dist",
     "dev": "dumi dev",
-    "preview:site": "npm run build:site && serve doc-site"
+    "preview:site": "npm run build:site && serve dist"
   },
   "husky": {
     "hooks": {
@@ -46,6 +49,7 @@
     "commitizen": "^4.2.6",
     "cz-conventional-changelog": "^3.3.0",
     "dumi": "^2.0.13",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.1.0",
     "prettier": "^2.8.1",
