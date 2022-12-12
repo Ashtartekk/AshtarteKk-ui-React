@@ -1,5 +1,5 @@
 # AshtarteKk-ui-React
-React组件库
-yarn 
-yarn dev
-即可查看
+React组件库 \n
+yarn \n
+yarn dev\n
+即可查看\n
